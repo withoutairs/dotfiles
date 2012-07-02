@@ -47,3 +47,5 @@ colorscheme solarized
 " Make jj exit insert mode (since it's almost never typed normally).
 imap jj <Esc>:w<CR>
 
+" todo.txt
+Bundle "mivok/vimtodo"
