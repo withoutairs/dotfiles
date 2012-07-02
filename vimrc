@@ -18,12 +18,17 @@ Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 Bundle 'L9'
 " non github repos
-Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on     " required!
 
+" relative line numbers
+Bundle 'myusuf3/numbers'
+nnoremap <F3> :NumbersToggle<CR>
+
+" ,t  for command-t menu
 let mapleader = ","
+Bundle 'git://git.wincent.com/command-t.git'
 
 " Tabs, Spaces and Indentation.
 set expandtab " Use spaces for tabs.
