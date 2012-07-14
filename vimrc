@@ -52,3 +52,7 @@ Bundle "vimoutliner/vimoutliner"
 
 " quiet down
 set visualbell
+
+" tab-completion for commands
+set wildmenu
+set wildmode=longest,list,full
