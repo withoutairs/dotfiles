@@ -56,3 +56,7 @@ set visualbell
 " tab-completion for commands
 set wildmenu
 set wildmode=longest,list,full
+
+" crontab
+" http://tim.theenchanter.com/2008/07/crontab-temp-file-must-be-edited-in.html
+set backupskip=/tmp/*,/private/tmp/*
