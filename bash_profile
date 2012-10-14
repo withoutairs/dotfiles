@@ -44,6 +44,7 @@ spike1-scp-server() {
         scp -o "StrictHostKeyChecking no" -i ~/.ec2/spike1-cbrown.pem $1 ubuntu@`ec2-describe-instances -F "tag:role=server" | awk '/^INSTANCE/ {print $4}'`:/tmp
 }
 
+abspath () { case "$1" in /*)printf "%s\n" "$1";; *)printf "%s\n" "$PWD/$1";; esac; }
 
 ###
 # http://www.sallyroth.us/?p=73
