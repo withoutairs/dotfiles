@@ -5,7 +5,7 @@ export PATH=$PATH:$GROOVY_HOME/bin
 export GRAILS_HOME=/Users/cbrown/jar/grails-2.0.4/
 export PATH=$PATH:$GRAILS_HOME/bin
 
-export GRADLE_HOME=/Users/cbrown/jar/gradle-1.0-milestone-9
+export GRADLE_HOME=/Users/cbrown/dev/gradle-1.2/
 export PATH=$PATH:$GRADLE_HOME/bin
 
 # Setup Amazon EC2 Command-Line Tools
