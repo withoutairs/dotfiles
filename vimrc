@@ -41,9 +41,6 @@ set smartindent " Automatically insert another level of indent when needed.
 
 " colors, etc.
 syntax on
-set background=dark
-" http://stackoverflow.com/a/12969298
-let g:solarized_termtrans = 1
 colorscheme solarized
 
 " Make jj exit insert mode (since it's almost never typed normally).
