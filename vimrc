@@ -41,7 +41,6 @@ set smartindent " Automatically insert another level of indent when needed.
 
 " colors, etc.
 syntax on
-set background=dark
 colorscheme solarized
 
 " Make jj exit insert mode (since it's almost never typed normally).
@@ -56,3 +55,7 @@ set visualbell
 " tab-completion for commands
 set wildmenu
 set wildmode=longest,list,full
+
+" crontab
+" http://tim.theenchanter.com/2008/07/crontab-temp-file-must-be-edited-in.html
+set backupskip=/tmp/*,/private/tmp/*
