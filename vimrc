@@ -41,6 +41,9 @@ set smartindent " Automatically insert another level of indent when needed.
 
 " colors, etc.
 syntax on
+if has('gui_running')
+  set background=dark
+endif
 colorscheme solarized
 
 " Make jj exit insert mode (since it's almost never typed normally).
