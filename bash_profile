@@ -1,8 +1,8 @@
 export GROOVY_HOME=/Users/cbrown/jar/groovy-1.8.6/
-export PATH=/Users/cbrown/jar/groovy-1.8.6/bin:/Users/cbrown/jar/grails-2.0.4/bin:$PATH
+export PATH=/Users/cbrown/jar/groovy-1.8.6/bin:/Users/cbrown/dev/grails-2.1.1/bin:$PATH
 export PATH=$PATH:$GROOVY_HOME/bin
 
-export GRAILS_HOME=/Users/cbrown/jar/grails-2.0.4/
+export GRAILS_HOME=/Users/cbrown/dev/grails-2.1.1/
 export PATH=$PATH:$GRAILS_HOME/bin
 
 export GRADLE_HOME=/Users/cbrown/dev/gradle-1.2/
@@ -63,3 +63,16 @@ export HISTFILESIZE=1000000
 export HISTCONTROL=ignoreboth
 export HISTTIMEFORMAT='%F %T '
 export PROMPT_COMMAND='history -a'
+
+case "$TERM" in
+xterm*|rxvt*)
+DISP='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
+BASHLOG='/Users/cbrown/.bash_history.log'
+SAVEBASH='if [ "$(id -u)" -ne 0 ]; then echo "`date +"%Y-%m-%d %H:%M:%S"` `pwd` `history 1`" >> ${BASHLOG}; fi'
+PROMPT_COMMAND="${DISP};${SAVEBASH}"
+;;
+*)
+;;
+esac
+
+alias git-iu="git status -s | grep ^?? | awk '{print $2}' >> ~/.gitignore_global"
