@@ -1,12 +1,14 @@
-export GROOVY_HOME=/Users/cbrown/jar/groovy-1.8.6/
-export PATH=/Users/cbrown/jar/groovy-1.8.6/bin:/Users/cbrown/dev/grails-2.1.1/bin:$PATH
+export GROOVY_HOME=/Users/cbrown/jar/groovy-sdk-2.1.0
 export PATH=$PATH:$GROOVY_HOME/bin
 
-export GRAILS_HOME=/Users/cbrown/dev/grails-2.1.1/
+export GRAILS_HOME=/Users/cbrown/jar/grails-2.2.0/
 export PATH=$PATH:$GRAILS_HOME/bin
 
 export GRADLE_HOME=/Users/cbrown/dev/gradle-1.2/
 export PATH=$PATH:$GRADLE_HOME/bin
+
+export JAVA_HOME=`/usr/libexec/java_home`
+export PATH=$JAVA_HOME/bin:$PATH
 
 # Setup Amazon EC2 Command-Line Tools
 export EC2_HOME=~/.ec2
