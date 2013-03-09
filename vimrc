@@ -16,6 +16,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
 Bundle 'henrik/vim-open-url'
+Bundle 'airblade/vim-gitgutter'
 " vim-scripts repos
 Bundle 'L9'
 " non github repos
