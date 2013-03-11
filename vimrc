@@ -17,6 +17,7 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
 Bundle 'henrik/vim-open-url'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'scrooloose/nerdtree.git'
 " vim-scripts repos
 Bundle 'L9'
 " non github repos
@@ -27,6 +28,8 @@ filetype plugin indent on     " required!
 " relative line numbers
 Bundle 'myusuf3/numbers'
 nnoremap <F3> :NumbersToggle<CR>
+
+nnoremap ; :NERDTreeToggle<CR>
 
 " ,t  for command-t menu
 let mapleader = ","
