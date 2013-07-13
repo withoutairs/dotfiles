@@ -18,6 +18,7 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'henrik/vim-open-url'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'scrooloose/nerdtree.git'
+
 " vim-scripts repos
 Bundle 'L9'
 " non github repos
@@ -66,3 +67,7 @@ set wildmode=longest,list,full
 " crontab
 " http://tim.theenchanter.com/2008/07/crontab-temp-file-must-be-edited-in.html
 set backupskip=/tmp/*,/private/tmp/*
+
+" vim-airline
+Bundle 'bling/vim-airline'
+set laststatus=2
