@@ -31,10 +31,7 @@ Bundle 'myusuf3/numbers'
 nnoremap <F3> :NumbersToggle<CR>
 
 nnoremap ; :NERDTreeToggle<CR>
-
-" ,t  for command-t menu
-let mapleader = ","
-Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'https://github.com/scrooloose/nerdtree'
 
 " Tabs, Spaces and Indentation.
 set expandtab " Use spaces for tabs.
@@ -71,3 +68,6 @@ set backupskip=/tmp/*,/private/tmp/*
 " vim-airline
 Bundle 'bling/vim-airline'
 set laststatus=2
+
+" not great
+imap hh <Esc>ggi<CR><Esc>:r!date "+\%Y-\%m-\%dT\%H:\%M:\%S"<CR>A
