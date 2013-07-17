@@ -69,5 +69,6 @@ set backupskip=/tmp/*,/private/tmp/*
 Bundle 'bling/vim-airline'
 set laststatus=2
 
-" not great
-imap hh <Esc>ggi<CR><Esc>:r!date "+\%Y-\%m-\%dT\%H:\%M:\%S"<CR>A
+" F5 to insert current date/time
+:nnoremap <F5> "=strftime("%FT%T")<CR>P
+:inoremap <F5> <C-R>=strftime("%FT%T")<CR>
