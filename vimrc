@@ -18,6 +18,7 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'henrik/vim-open-url'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'scrooloose/nerdtree.git'
+Bundle 'airblade/vim-rooter'
 
 " vim-scripts repos
 Bundle 'L9'
