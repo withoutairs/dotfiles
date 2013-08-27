@@ -64,14 +64,13 @@ export HISTSIZE=1000000
 export HISTFILESIZE=1000000
 export HISTCONTROL=ignoreboth
 export HISTTIMEFORMAT='%F %T '
-export PROMPT_COMMAND='history -a'
 
 case "$TERM" in
 xterm*|rxvt*)
 DISP='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 BASHLOG='/Users/cbrown/.bash_history.log'
 SAVEBASH='if [ "$(id -u)" -ne 0 ]; then echo "`date +"%Y-%m-%d %H:%M:%S"` `pwd` `history 1`" >> ${BASHLOG}; fi'
-PROMPT_COMMAND="${DISP};${SAVEBASH}"
+PROMPT_COMMAND="${PROMPT_COMMAND}${DISP};${SAVEBASH}"
 ;;
 *)
 ;;
