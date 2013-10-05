@@ -73,3 +73,7 @@ set laststatus=2
 " F5 to insert current date/time
 :nnoremap <F5> "=strftime("%FT%T")<CR>P
 :inoremap <F5> <C-R>=strftime("%FT%T")<CR>
+
+set incsearch
+
+autocmd BufWritePost * execute ':silent ! if [ -d .git -a -f todo.txt ]; then git commit -a -m %; fi'
