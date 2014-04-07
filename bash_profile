@@ -1,7 +1,7 @@
 export GROOVY_HOME=/Users/cbrown/jar/groovy-sdk-2.1.0
 export PATH=$PATH:$GROOVY_HOME/bin
 
-export GRAILS_HOME=/Users/cbrown/jar/grails-2.2.0/
+export GRAILS_HOME=/Users/cbrown/dev/grails-2.3.7/
 export PATH=$PATH:$GRAILS_HOME/bin
 
 export GRADLE_HOME=/Users/cbrown/dev/gradle-1.2/
@@ -15,7 +15,6 @@ export EC2_HOME=~/.ec2
 export PATH=$PATH:$EC2_HOME/bin
 export EC2_PRIVATE_KEY=$EC2_HOME/pk-GIWOVJ6HYQ7OIIWPQ3RY4OKT2FHTF64F.pem
 export EC2_CERT=$EC2_HOME/cert-GIWOVJ6HYQ7OIIWPQ3RY4OKT2FHTF64F.pem
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 
 # spike1 AWS
 alias spike1-start-mc='ec2-start-instances i-15656074'
@@ -77,3 +76,4 @@ PROMPT_COMMAND="${PROMPT_COMMAND}${DISP};${SAVEBASH}"
 esac
 
 alias git-iu="git status -s | grep ^?? | awk '{print $2}' >> ~/.gitignore_global"
+source /usr/local//bin/virtualenvwrapper.sh
