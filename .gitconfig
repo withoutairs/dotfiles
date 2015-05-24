@@ -1,0 +1,33 @@
+[user]
+	name = heychrisbrown
+	email = github@ktcb.com
+
+[alias]
+	s = status
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+  lola = log --graph --decorate --oneline --all
+  c = commit -a -m
+
+[color]
+	diff = auto
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[core]
+	excludesfile = /Users/cbrown/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

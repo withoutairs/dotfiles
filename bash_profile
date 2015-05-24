@@ -77,3 +77,7 @@ esac
 
 alias git-iu="git status -s | grep ^?? | awk '{print $2}' >> ~/.gitignore_global"
 source /usr/local//bin/virtualenvwrapper.sh
+
+alias mint="cd /Users/cbrown/dev/mint-exporter && foreman run ruby mint-exporter.rb && ruby munge.rb"
+
+alias hist='history  | grep'
