@@ -1,38 +1,37 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " My Bundles here:
 "
 " original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'tpope/vim-rails.git'
-Bundle 'henrik/vim-open-url'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'scrooloose/nerdtree.git'
-Bundle 'airblade/vim-rooter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'tpope/vim-rails.git'
+Plugin 'henrik/vim-open-url'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-rooter'
 
 " vim-scripts repos
-Bundle 'L9'
+Plugin 'L9'
 " non github repos
-Bundle 'altercation/vim-colors-solarized'
-
+Plugin 'altercation/vim-colors-solarized'
+call vundle#end()
 filetype plugin indent on     " required!
 
 " relative line numbers
-Bundle 'myusuf3/numbers'
+Plugin 'myusuf3/numbers'
 nnoremap <F3> :NumbersToggle<CR>
 
 nnoremap ; :NERDTreeToggle<CR>
-Bundle 'https://github.com/scrooloose/nerdtree'
+Plugin 'https://github.com/scrooloose/nerdtree'
 
 " Tabs, Spaces and Indentation.
 set expandtab " Use spaces for tabs.
@@ -52,9 +51,6 @@ colorscheme solarized
 " Make jj exit insert mode (since it's almost never typed normally).
 imap jj <Esc>:w<CR>
 
-" todo
-Bundle "vimoutliner/vimoutliner"
-
 " quiet down
 set visualbell
 
@@ -67,7 +63,7 @@ set wildmode=longest,list,full
 set backupskip=/tmp/*,/private/tmp/*
 
 " vim-airline
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 set laststatus=2
 
 " F5 to insert current date/time
